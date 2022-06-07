@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right,
+      rgb(39, 36, 40),
+      rgb(210, 210, 210));
+}
+
+.container {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.header {
+  background-color: rgb(247, 247, 247);
+  line-height: 1;
+  font-size: 1rem;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.container h2{
+  padding-left: 10px;
+}
+.logo {
+  display: flex;
+  height: 45px;
+  border-radius: 100rem;
+  justify-content: left;
+}
+
+.main_container .container {
+  /* border: 2px solid red; */
+  display: flex;
+  column-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.add_form {
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.8rem black;
+  width: 100%;
+}
+.add_form input {
+  line-height: 2;
+  outline: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.add_form textarea {
+  outline: none;
+  font-size: 1rem;
+  padding-left: 1rem;
+  resize: none;
+}
+
+.add_form button {
+  outline: none;
+  font-size: 1rem;
+  background-color: rgb(12, 161, 12);
+  border: none;
+  color: white;
+  line-height: 2;
+}
+
+.heading {
+  color: white;
+}
+
+.display_sec {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.task {
+  padding: 1rem;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: 0 0 0.2rem black;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.task .title {
+  font-weight: 600;
+}
+
+.option {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+}
+
+.option button {
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  font-weight: 800;
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0.1rem black;
+  border-radius: 0.1rem;
+}
+
+.option .comp_btn {
+  background-color: rgb(12, 161, 12);
+}
+
+.task_list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.task_list section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  row-gap: 1rem;
+}
+
+.comp_task .task {
+  background-color: rgb(192, 192, 192);
+}
+
+.comp_task .task .title,
+.comp_task .task .desc {
+  text-decoration: line-through;
+}
+
+.comp_task .task .option .comp_btn {
+  display: none;
+}

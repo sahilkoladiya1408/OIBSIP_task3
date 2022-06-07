@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO WEBApp</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <div class="header">
+            <div class="container">
+                <img class="logo"  src="image.jpeg">
+                <h2>To Do Web App</h2>
+                
+            </div>
+        </div>
+
+        <div class="main_container">
+            <div class="container">
+                <div class="add_sec">
+                    <div class="add_form">
+                        <input type="text" id="task_title" placeholder="Title">
+                        <textarea id="task_des" rows="10" cols="50" placeholder="Description"></textarea>
+                        <button id="add_btn">Add Task</button>
+                    </div>
+                </div>
+            </div>
+            <div class="display_sec">
+                <h1 class="heading">Task List </h1>
+                <hr><br>
+                <div class="task_list">
+                    <section class="pending_task">
+
+
+                    </section>
+                    <section class="comp_task">
+
+
+                    </section>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
